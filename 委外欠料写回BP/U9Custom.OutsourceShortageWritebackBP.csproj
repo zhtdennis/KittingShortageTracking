@@ -1,0 +1,22 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><OutputType>Library</OutputType><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><AssemblyName>U9Custom.OutsourceShortageWritebackBP</AssemblyName><RootNamespace>U9Custom.OutsourceShortageWritebackBP</RootNamespace><OutputPath>bin\$(Configuration)\</OutputPath></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Xml" /><Reference Include="System.ServiceModel" /><Reference Include="UFSoft.UBF.Business"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.Business.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFSoft.UBF.AopFrame"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.AopFrame.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFSoft.UBF.PL"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.PL.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UBF.System"><HintPath>E:\yonyou\U9CE\Portal\bin\UBF.System.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFIDA.U9.MO.MOBE"><HintPath>E:\yonyou\U9CE\Portal\ApplicationServer\Libs\UFIDA.U9.MO.MOBE.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFIDA.U9.ISV.MO.MOSV.Agent"><HintPath>E:\yonyou\U9CE\Portal\ApplicationServer\Libs\UFIDA.U9.ISV.MO.MOSV.Agent.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFIDA.U9.ISV.MO.MOSV.Deploy"><HintPath>E:\yonyou\U9CE\Portal\ApplicationServer\Libs\UFIDA.U9.ISV.MO.MOSV.Deploy.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFIDA.U9.CBO.PubSV.Deploy"><HintPath>E:\yonyou\U9CE\Portal\ApplicationServer\Libs\UFIDA.U9.CBO.PubSV.Deploy.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFIDA.U9.CBO.SCMBE"><HintPath>E:\yonyou\U9CE\Portal\ApplicationServer\Libs\UFIDA.U9.CBO.SCMBE.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFIDA.U9.Base.BaseBE"><HintPath>E:\yonyou\U9CE\Portal\ApplicationServer\Libs\UFIDA.U9.Base.BaseBE.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFIDA.U9.CBO.PubBE"><HintPath>E:\yonyou\U9CE\Portal\ApplicationServer\Libs\UFIDA.U9.CBO.PubBE.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFSoft.UBF.Service"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.Service.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="U9Custom.OutsourceShortageWritebackBP.Deploy"><HintPath>bin\Release\U9Custom.OutsourceShortageWritebackBP.Deploy.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFSoft.UBF.Util.Data"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.Util.Data.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFSoft.UBF.AopFrame"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.AopFrame.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup><Compile Include="BP\WriteToMO.cs" /><Compile Include="BP\WriteToMOStub.cs" /><None Include="U9Custom.OutsourceShortageWritebackBP.ubfsvc"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></None></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,23 @@
+# Build outputs and Visual Studio state
+bin/
+obj/
+*.user
+*.suo
+*.pdb
+/*.dll
+
+# Local deployment backups
+DeployBackup/
+
+# Local logs and temporary outputs
+*.log
+*.tmp
+*.bak
+*.result*.txt
+
+# Local U9 deployment/runtime artifacts
+*.cache
+*.csproj.user
+
+# Keep the formal deployment package, but ignore ad-hoc files copied beside it.
+部署包/*/03_Scripts/新建 Text Document.txt

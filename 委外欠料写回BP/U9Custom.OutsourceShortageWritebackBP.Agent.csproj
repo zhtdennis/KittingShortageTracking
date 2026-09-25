@@ -1,0 +1,10 @@
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><OutputType>Library</OutputType><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><AssemblyName>U9Custom.OutsourceShortageWritebackBP.Agent</AssemblyName><RootNamespace>U9Custom.OutsourceShortageWritebackBP.Proxy</RootNamespace><OutputPath>bin\$(Configuration)\</OutputPath></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" /><Reference Include="System.ServiceModel" /><Reference Include="UBF.System"><HintPath>E:\yonyou\U9CE\Portal\bin\UBF.System.dll</HintPath><Private>False</Private></Reference><Reference Include="UFSoft.UBF.Business"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.Business.dll</HintPath><Private>False</Private></Reference><Reference Include="UFSoft.UBF.PL"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.PL.dll</HintPath><Private>False</Private></Reference><Reference Include="UFSoft.UBF.AopFrame"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.AopFrame.dll</HintPath><Private>False</Private></Reference><Reference Include="UFSoft.UBF.Util.Data"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.Util.Data.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UFSoft.UBF.Service"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.Service.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="E:\u9_二开\齐套分析缺料表\委外欠料写回BP\bin\Release\U9Custom.OutsourceShortageWritebackBP.Deploy.dll"><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup><Compile Include="Proxy\WriteToMOAgent.cs" /></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

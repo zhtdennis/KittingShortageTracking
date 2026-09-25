@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <system.serviceModel>
+    <services>
+      <service name="U9Custom.OutsourceShortageWritebackBP.WriteToMOStub">
+        <endpoint contract="U9Custom.OutsourceShortageWritebackBP.IWriteToMO" binding="basicHttpBinding" />
+      </service>
+    </services>
+  </system.serviceModel>
+</configuration>

@@ -1,0 +1,21 @@
+委外欠料写回 BP 部署说明
+
+版本：2026-08-28
+
+文件放置：
+1. U9Custom.OutsourceShortageWritebackBP.dll、U9Custom.OutsourceShortageWritebackBP.Deploy.dll、U9Custom.OutsourceShortageWritebackBP.ubfsvc
+   复制到 Portal\ApplicationServer\Libs。
+2. U9Custom.OutsourceShortageWritebackBP.Agent.dll、U9Custom.OutsourceShortageWritebackBP.Deploy.dll
+   复制到 Portal\ApplicationLib。
+3. 本 BP 使用 U9 标准 MOPickList 实体保存新增备料，使用标准 ModifyMO4ExternalProxy DTO 清理原备料。
+   服务器必须已有标准 UFIDA.U9.ISV.MO.MOSV.Agent.dll、MOSV.Deploy.dll 及其依赖；本部署目录不覆盖标准文件。
+4. 按 U9 客开 BP 部署规范执行元数据脚本、请求管理应用配置，并重启 IIS。
+
+本次修复：
+1. 校验目标生产订单存在且为开立状态。
+2. 逐条创建标准 MOPickList，设置料品、发料单位、供应组织、供应地点、实际需求日期、数量、工序和用量类型。
+3. 提交后重新读取生产订单备料集合，确认真实落库后才计入成功；兼容 U9 提交后由 MO.OnUpdated 抛异常但数据已落库的版本。
+4. 当前版本仅新增欠料表备料行，不清空、不修改、不删除目标生产订单原有备料。
+
+验证状态：
+三个项目已在本机编译通过；服务器文件与部署目录已更新；当前版本不执行原有备料清理。

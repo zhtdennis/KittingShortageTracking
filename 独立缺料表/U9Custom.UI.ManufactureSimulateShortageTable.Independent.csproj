@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProjectGuid>{5C2C6A7D-8F32-4E61-B7D6-49A0D4B1C1A0}</ProjectGuid><OutputType>Library</OutputType><RootNamespace>U9Custom.UI.ManufactureSimulateShortageTable.Independent</RootNamespace><AssemblyName>U9Custom.UI.ManufactureSimulateShortageTable.Independent</AssemblyName><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><FileAlignment>512</FileAlignment><ReferencePath>E:\yonyou\U9CE\Portal\bin\;E:\yonyou\U9CE\Portal\UILib\;E:\yonyou\U9CE\Portal\UBFLib\;E:\yonyou\U9CE\Portal\ApplicationServer\Libs\</ReferencePath></PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' "><DebugType>pdbonly</DebugType><Optimize>true</Optimize><OutputPath>bin\Release\</OutputPath><DefineConstants>TRACE</DefineConstants><WarningLevel>4</WarningLevel></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" /><Reference Include="System.Core" /><Reference Include="System.Data" /><Reference Include="System.Data.DataSetExtensions" /><Reference Include="System.Web" /><Reference Include="System.Web.Extensions" /><Reference Include="System.Xml" />
+    <Reference Include="System.ValueTuple"><HintPath>E:\yonyou\U9CE\Portal\bin\System.ValueTuple.dll</HintPath><SpecificVersion>false</SpecificVersion><Private>false</Private></Reference>
+    <Reference Include="UFIDA.U9.UI.PDHelper, Version=25.5401.20054.0"><HintPath>E:\yonyou\U9CE\Portal\UBFLib\UFIDA.U9.UI.PDHelper.dll</HintPath><SpecificVersion>true</SpecificVersion><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.Sys.Database"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.Sys.Database.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.UI.ActionProcess"><HintPath>E:\yonyou\U9CE\Portal\UBFLib\UFSoft.UBF.UI.ActionProcess.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.UI.Controls.Interface"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.UI.Controls.Interface.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.UI.FormProcess"><HintPath>E:\yonyou\U9CE\Portal\UBFLib\UFSoft.UBF.UI.FormProcess.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.UI.IView"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.UI.IView.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.UI.MD.Runtime"><HintPath>E:\yonyou\U9CE\Portal\UBFLib\UFSoft.UBF.UI.MD.Runtime.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.UI.Portal"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.UI.Portal.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.UI.Engine.Runtime"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.UI.Engine.Runtime.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.UI.WebControls.BaseComponent"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.UI.WebControls.BaseComponent.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.UI.WebControls.UFDataGrid"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.UI.WebControls.UFDataGrid.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.UI.MVC"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.UI.MVC.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.UI.Base"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.UI.Base.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UFSoft.UBF.UI.State"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.UI.State.dll</HintPath><Private>false</Private></Reference><Reference Include="UFSoft.UBF.UI.UIFormPersonalization"><HintPath>E:\yonyou\U9CE\Portal\bin\UFSoft.UBF.UI.UIFormPersonalization.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <ItemGroup><Compile Include="*.cs" /></ItemGroup><Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
